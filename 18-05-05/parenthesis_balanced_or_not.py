@@ -35,3 +35,41 @@ if parenthesis_balanced_or_not(exp):
 
 else:
     print("parenthesis not  balanced")
+
+'''
+s="[()[()]{[})]}]"
+
+stack=[]
+
+def balanced_or_not(s):
+
+    if len(s)%2!=0:
+        return False
+
+    for i in s:
+        
+        if i in ["(","{","["]:
+            stack.append(i)
+
+        elif i==")" and stack.pop()!="(":
+            return False
+
+        elif i=="}" and stack.pop()!="{":
+            return False
+
+        elif i=="]" and stack.pop()!="[":
+            return False
+
+    if stack:
+        return False
+
+    return True
+
+res=balanced_or_not(s)
+
+if res==True:
+    print("balanced")
+else:
+    print("not balanced")
+
+
