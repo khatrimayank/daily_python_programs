@@ -1,4 +1,22 @@
-s='kaank'
+'''s="kanaak"
+
+if s==s[::-1]:
+    print("given string is palindrome")
+
+else:
+    print("not palindrome")'''
+
+def palindrome_or_not(s):
+    for i in range(len(s)):
+        if s[i]==s[len(s)-1-i]:
+            continue
+        else:
+            return False
+
+    return True
+
+print(palindrome_or_not(s))
+'''s='kaank'
 
 def palindorme(string,l,h):
 
