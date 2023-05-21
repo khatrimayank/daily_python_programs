@@ -1,4 +1,24 @@
-def change_char(list1,list2):
+s1 = "computer"
+s2 = "cat"
+
+char_set = set(s2)
+filtered_string = ''.join(char for char in s1 if char not in char_set)
+
+print(filtered_string)
+
+
+'''s1="computer"
+s2="cat"
+
+for i in (s2):
+
+    s1=s1.replace(i,"")
+
+print(s1)'''
+
+
+
+'''def change_char(list1,list2):
 
     for i in range(len(list1)):
 
