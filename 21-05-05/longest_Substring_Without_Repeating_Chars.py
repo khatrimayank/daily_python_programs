@@ -17,7 +17,7 @@ def longestSubstringWithoutRepeatingChars(s):
     return max_length
 print(longestSubstringWithoutRepeatingChars('bbb'))
 
-'''
+''' print substring code
 def longestSubstringWithoutRepeatingChars(s):
     n = len(s)
     max_length = 0
